@@ -19,6 +19,4 @@ class TipsController < ApplicationController
   end
   parsed_results = JSON.parse(resp.body)
   @results = parsed_results['response']['listItems']['items']
-
-  render 'index'
 end
